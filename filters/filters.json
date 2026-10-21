@@ -1,0 +1,126 @@
+{
+ "version": 1,
+ "updated": "2026-10-21",
+ "filters": [
+  {
+   "id": "lut_fuji_velvia",
+   "name": "富士·Velvia",
+   "category": "相机模拟",
+   "file": "filters/lut_fuji_velvia.png",
+   "sha256": "93c0f2ad13408d88d8e7cca30da8e544546a85f36909bb21b562a7c772341969",
+   "bytes": 121691,
+   "source": "t3mujinpack HaldCLUT 'Fuji Velvia 50' (MIT) 转换",
+   "license": "MIT (t3mujinpack)"
+  },
+  {
+   "id": "lut_fuji_provia",
+   "name": "富士·Provia",
+   "category": "相机模拟",
+   "file": "filters/lut_fuji_provia.png",
+   "sha256": "5bf37b857f98a8732453d5e4248d8d5adf5f7005917ce5ca4ef8dabf414c1c71",
+   "bytes": 134746,
+   "source": "t3mujinpack HaldCLUT 'Fuji Provia 100F' (MIT) 转换",
+   "license": "MIT (t3mujinpack)"
+  },
+  {
+   "id": "lut_fuji_astia",
+   "name": "富士·Astia",
+   "category": "相机模拟",
+   "file": "filters/lut_fuji_astia.png",
+   "sha256": "8590d92a1baed55dd628000fd6da59dd3c103777f79cf6c30bb8907791e2b3f5",
+   "bytes": 121918,
+   "source": "t3mujinpack HaldCLUT 'Fuji Astia 100F' (MIT) 转换",
+   "license": "MIT (t3mujinpack)"
+  },
+  {
+   "id": "lut_fuji_proneg",
+   "name": "富士·Pro负片",
+   "category": "相机模拟",
+   "file": "filters/lut_fuji_proneg.png",
+   "sha256": "b49f2955731074ba241baa27a33a0d729d73c4ecba13f889d6beebfe7f55f42e",
+   "bytes": 143870,
+   "source": "t3mujinpack HaldCLUT 'Fuji Pro 400H' (MIT) 转换，Pro Neg 的同名胶片蓝本",
+   "license": "MIT (t3mujinpack)"
+  },
+  {
+   "id": "lut_kodak_portra",
+   "name": "柯达·Portra",
+   "category": "相机模拟",
+   "file": "filters/lut_kodak_portra.png",
+   "sha256": "1243650e451a9426cd4111ea589130af4214749a11a94097d30837ec95851e6f",
+   "bytes": 149931,
+   "source": "t3mujinpack HaldCLUT 'Kodak Portra 400' (MIT) 转换",
+   "license": "MIT (t3mujinpack)"
+  },
+  {
+   "id": "lut_nikon_standard",
+   "name": "尼康·标准",
+   "category": "相机模拟",
+   "file": "filters/lut_nikon_standard.png",
+   "sha256": "69d6dd8b7c3b0cfd026eb74ba62965dd25bfeab0854eb674c4abe0cd1da850a3",
+   "bytes": 45746,
+   "source": "自研近似：据尼康 Picture Control『标准』公开特性（均衡、适度对比与饱和）以参数配方烘焙",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_nikon_vivid",
+   "name": "尼康·鲜艳",
+   "category": "相机模拟",
+   "file": "filters/lut_nikon_vivid.png",
+   "sha256": "e21646bc459a24bd7416a7925eff51390a9dbf88236340bcc06422ff6b83d771",
+   "bytes": 42451,
+   "source": "自研近似：据尼康 Picture Control『鲜艳』公开特性（高饱和、高对比）以参数配方烘焙",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_ricoh_positive",
+   "name": "理光·正片",
+   "category": "相机模拟",
+   "file": "filters/lut_ricoh_positive.png",
+   "sha256": "cde11929f03f8d6c9cdf526272a3dfe483b884cc15db2fefc0ebc470a4b22c59",
+   "bytes": 46284,
+   "source": "自研近似：据理光 GR『正片』公开特性（高对比、浓艳、硬朗）以参数配方烘焙",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_mori",
+   "name": "森系青调",
+   "category": "文艺",
+   "file": "filters/lut_mori.png",
+   "sha256": "8c2dc501eaf93f8a074e47ddefe7d7c1a0f06c40fb52aacd518cc98d0c56db87",
+   "bytes": 73736,
+   "source": "自研：低饱和 + 阴影青绿分色调 + 提黑（zh5 文艺色调调研）",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_salt",
+   "name": "盐系",
+   "category": "文艺",
+   "file": "filters/lut_salt.png",
+   "sha256": "a0d4321bd3bd3f47deb38b90343e564e5ca235478493bbae0e42846f88c089e7",
+   "bytes": 49004,
+   "source": "自研：高明度、低对比、低饱和的清淡盐系配方（zh5 文艺色调调研）",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_showa",
+   "name": "昭和复古",
+   "category": "文艺",
+   "file": "filters/lut_showa.png",
+   "sha256": "b15967cfb81b038901a82f2f9c30d7ed36d68d95cb478fd21995efbb8cbef3ab",
+   "bytes": 49971,
+   "source": "自研：暖黄褪色 + 提黑 + 低饱和的昭和写真配方（zh5 文艺色调调研）",
+   "license": "Original work of this project"
+  },
+  {
+   "id": "lut_wabi",
+   "name": "侘寂灰调",
+   "category": "文艺",
+   "file": "filters/lut_wabi.png",
+   "sha256": "ac435d48737a523a9a446046cf43d79983fe10da0dbb24b74f9fd245ae52cc2a",
+   "bytes": 40011,
+   "source": "自研：大幅降饱和 + 柔对比 + 中性灰褐的侘寂配方（zh5 文艺色调调研）",
+   "license": "Original work of this project"
+  }
+ ]
+}

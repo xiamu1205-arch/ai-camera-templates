@@ -39,3 +39,30 @@
 - 半身：同上小红书合集 + Lemon8 半身人像合集——双手比心、脸颊比心、单手托腮、竖大拇指、脸旁比耶、捂嘴笑。
 - 坐姿：英文 pose guide 的 Seated Cross-Leg / Knees to Chest / Mermaid，加小红书元气街拍合集（劉小瑜咯/不困妮妮/周多鱼）的盘腿坐。
 - 全身：pose guide 的 The Step（迈步）/ Arms Above Head（伸懒腰），加单脚站立、踮脚伸手等社交平台常见动态姿势。
+
+## 相机模拟 / 文艺 LUT 滤镜包（zh6）
+
+`filters/filters.json` + `filters/*.png` 是「AI拍照」的在线 LUT 滤镜库：真正的 3D LUT（GPUImage LookupFilter 格式的 512×512 查找图），App 按需下载并缓存，内置只留 1 个兜底；更新滤镜 = 改 `filters.json` 并提交新的 PNG，不用发新版安装包。
+
+格式：
+
+```json
+{
+  "version": 1,
+  "updated": "2026-10-21",
+  "filters": [
+    {"id": "lut_fuji_provia", "name": "富士·Provia", "category": "相机模拟",
+     "file": "filters/lut_fuji_provia.png", "sha256": "<64 hex>", "bytes": 134746,
+     "source": "...", "license": "..."}
+  ]
+}
+```
+
+- 查找图版式：像素 (x, y)（y 向下）↔ 网格点 (r = x%64, g = y%64, b = (x/64) + 8*(y/64))，与 GPUImage 官方 identity lookup.png 逐像素对齐验证过。
+- 提交前先跑：`python3 validate_filters.py filters/filters.json`（与 App 同规则：id 唯一、sha256 与字节数对得上、PNG 必须 512×512、每条必须有来源说明）。
+
+来源与许可：
+
+- 相机模拟（胶片复刻）：转换自 t3mujinpack（github.com/t3mujin/t3mujinpack，MIT License）的 HaldCLUT——富士 Velvia 50 / Provia 100F / Astia 100F / Pro 400H、柯达 Portra 400。这些正是富士数码胶片模拟同名的胶片蓝本；转换 = Hald 144³ 三线性重采样到 64³，并用 GPUImage shader 的离线模拟校验过保真度。
+- 尼康·标准/鲜艳、理光·正片：无许可清晰的官方/开源 LUT 可用，为本项目据厂商公开的色彩特性自研的参数配方烘焙（近似，非官方 LUT）。
+- 文艺（森系青调/盐系/昭和复古/侘寂灰调）：本项目自研配方烘焙。
